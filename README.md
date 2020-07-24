@@ -23,3 +23,4 @@ Route53 recordsets for both steelelounge.com and www.steelelounge.com are set up
 - Bootstrap documentation - [Bootstrap 4](https://getbootstrap.com/)
 - Hooking up S3, Cloudfront, and Route53 [AWS for Newbs](https://awsnewbies.com/s3-website-route-53-cloudfront/)
 - Linking S3 Directly to Route59 [AWS Route53](https://docs.aws.amazon.com/Route53/latest/DeveloperGuide/getting-started.html#getting-started-create-s3-www-bucket)
+- Code pipeline config for [Github Repo >> S3](https://medium.com/avmconsulting-blog/automate-static-website-deployment-from-github-to-s3-using-aws-codepipeline-16acca25ebc1)
