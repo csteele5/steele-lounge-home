@@ -3,6 +3,7 @@
 ## Summary
 
 This is the entry point for all Internet facing resources made public for demo purposes or personal use.
+[Direct Link](http://steelelounge.com)
 
 ## Design Notes
 
