@@ -6,10 +6,10 @@ This is the entry point for all Internet facing resources made public for demo p
 ## Design Notes
 The landing site is hosted on S3 as a static web page with links to other AWS resources as needed.  To minimize S3 bucket usage, reference links to external resources will be used when practical.
 
-** S3 >> Cloudfront >> Certificate Manager >> Route53
+**S3 >> Cloudfront >> Certificate Manager >> Route53**
 Initial setup involved connecting a single S3 bucket with all web files to multiple cloudfront distributions to cover steelelounge.com, www.steelelounge.com, and home.steelelounge.com.  This was successfully setup with SSL using Certificate Manager, but the file updating process was painful.  The cache would not instantly update (24/12 hour latency).  This approach was abandoned in favor of direct S3 to Route 53 without SSL
 
-** S3 >> Route53
+**S3 >> Route53**
 Route53 recordsets for both steelelounge.com and www.steelelounge.com are set up without SSL, directly to 2 buckets. steelelounge.com has all of the files and www.steelelounge.com is set up as a redirect to the other.
 
 ## Resources
